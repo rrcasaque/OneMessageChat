@@ -1,6 +1,6 @@
 package com.example.onemessagechat.model
 
-class ChatApp(
+class Room(
     var conversations: MutableList<Conversation>,
     var currentUser: User
 ) {
