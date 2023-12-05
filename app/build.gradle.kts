@@ -3,21 +3,25 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id ("kotlin-parcelize")
     id ("com.google.devtools.ksp")
-    //id "com.google.gms.google-services"
+    id ("com.google.gms.google-services")
 }
 
 android {
-    namespace = "com.example.onemessagechat"
-    compileSdk = 33
+    namespace = "com.casaque.onemessagechat"
+    compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.onemessagechat"
+        applicationId = "com.casaque.onemessagechat"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        viewBinding = true
     }
 
     buildTypes {
@@ -53,10 +57,11 @@ dependencies {
     annotationProcessor ("androidx.room:room-compiler:2.6.0")
     ksp ("androidx.room:room-compiler:2.6.0")
 
-//    // firebase
-//    implementation platform('com.google.firebase:firebase-bom:32.5.0')
-//
-//    // realtime database
-//    implementation("com.google.firebase:firebase-database")
-//    implementation("com.google.firebase:firebase-database-ktx")
+    // firebase
+    //implementation ("com.google.firebase:firebase-bom:32.5.0")
+    implementation(platform("com.google.firebase:firebase-bom:32.6.0"))
+
+    // realtime database
+    implementation("com.google.firebase:firebase-database")
+    implementation("com.google.firebase:firebase-database-ktx")
 }
