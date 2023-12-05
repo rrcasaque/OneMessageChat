@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "519555000861",
+    "project_id": "ifsp-onemessagechat",
+    "storage_bucket": "ifsp-onemessagechat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519555000861:android:22efee877668c4c518b4f4",
+        "android_client_info": {
+          "package_name": "com.casaque.onemessagechat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDU3DNL8gNd2_WXSgr305igbQicSyPS-gU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

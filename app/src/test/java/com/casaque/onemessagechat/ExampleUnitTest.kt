@@ -1,4 +1,4 @@
-package com.example.onemessagechat
+package com.casaque.onemessagechat
 
 import org.junit.Test
 
